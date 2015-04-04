@@ -40,9 +40,22 @@ cdh2
 cdh3
 ```
 
+启动HDFS
+
+```
+[hadoop@cdh1 ~]$ hadoop/sbin/start-dfs.sh
+[hadoop@cdh1 ~]$ hadoop/sbin/start-yarn.sh
+```
+
 #### Hive
 
 在上面的 HDFS 集群中设置 Hive，使用宿主机的 MySQL 作为 metastore。
+
+启动Hive
+
+```
+[hadoop@cdh1 ~]$ hive/bin/hive --service metastore
+```
 
 ## Docker
 
