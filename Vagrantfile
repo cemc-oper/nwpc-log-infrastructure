@@ -42,6 +42,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 			# If true, then any SSH connections made will enable agent forwarding.
 			# Default value: false
 			# config.ssh.forward_agent = true
+			config.ssh.private_key_path = "C:/Users/wangdp/.ssh/vagrant_rsa"
+			config.ssh.password = "vagrant"
 
 			# Share an additional folder to the guest VM. The first argument is
 			# the path on the host to the actual folder. The second argument is
@@ -136,10 +138,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
 			# set auto_update to false, if you do NOT want to check the correct
 			# additions version when booting this machine
-			config.vbguest.auto_update = false
+			# config.vbguest.auto_update = false
 
 			# do NOT download the iso file from a webserver
-			config.vbguest.no_remote = 	false
+			# config.vbguest.no_remote = 	false
 		end
   	end
 
