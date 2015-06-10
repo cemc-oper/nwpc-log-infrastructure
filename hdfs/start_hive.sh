@@ -1,3 +1,3 @@
 #!/bin/bash
-export HIVE_HOME=/home/hive/hive
+export HIVE_HOME=/home/hadoop/hive
 $HIVE_HOME/bin/hive --service metastore
