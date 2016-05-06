@@ -1,6 +1,6 @@
 #!/bin/bash
 set -x
-export KAFKA_BASE=/home/vagrant/app/kafka_2.8.0-0.8.1.1
+export KAFKA_BASE=/home/vagrant/app/kafka/kafka_2.10-0.8.2.0
 
 zookeeper_host=10.28.32.175
 zookeeper_port=2181
