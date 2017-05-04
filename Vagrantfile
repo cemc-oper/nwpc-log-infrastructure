@@ -15,7 +15,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 			# please see the online documentation at vagrantup.com.
 
 			# Every Vagrant virtual environment requires a box to build off of.
-			config.vm.box = "centos7"
+			config.vm.box = "bento/centos-7.2"
 
 			config.vm.hostname = vm_name
 			config.ssh.username="vagrant"
@@ -42,7 +42,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 			# If true, then any SSH connections made will enable agent forwarding.
 			# Default value: false
 			# config.ssh.forward_agent = true
-			config.ssh.private_key_path = "C:/Users/wangdp/.ssh/vagrant_rsa"
+			#config.ssh.private_key_path = "C:/Users/wangdp/.ssh/vagrant_rsa"
 			config.ssh.password = "vagrant"
 
 			# Share an additional folder to the guest VM. The first argument is
@@ -60,7 +60,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 			#   vb.gui = true
 			#
 			#   # Use VBoxManage to customize the VM. For example to change memory:
-			   vb.customize ["modifyvm", :id, "--name", vm_name, "--memory", "1024",'--cpus', 1]
+			   vb.customize ["modifyvm", :id, "--memory", "2048"]
 			end
 			#
 			# View the documentation for the provider you're using for more
